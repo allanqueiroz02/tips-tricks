@@ -12,6 +12,16 @@
         border: none;
         border-left: 2px solid #ff0000;
       }
+
+      button {
+        border-radius: 3px;
+        padding: 14px;
+        letter-spacing: 1px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      button:hover {
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -31,14 +41,22 @@
       </ul>
     </details>
 
-    <h2 class="cool-header">#3</h2>
+    <h3 class="cool-header">#3</h3>
     <div draggable="true">
-      <p>Apenas mais um texto sem sentido nenhum escrito aqui. & este parágrafo pode ser arrastado :O</p>
+      <p>
+        Apenas mais um texto sem sentido nenhum escrito aqui. & este parágrafo
+        pode ser arrastado :O
+      </p>
     </div>
 
-    <h2 class="cool-header">#4</h2>
+    <h3 class="cool-header">#4</h3>
     <div>
       <p id="arr-1"></p>
+    </div>
+
+    <h3 class="cool-header">#5</h3>
+    <div>
+      <button id="btn-vibration">Vamos vibrar</button>
     </div>
 
     <script src="../dist/index.js"></script>

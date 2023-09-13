@@ -12,3 +12,10 @@ if (arr1)
 Original: [${arrayNumeros}]
 Formatado-errado: [${arrFormatado}]
 Formatado-certo: [${arrFormatadoCorretamente}]`;
+
+const btnVibration = document.querySelector("#btn-vibration");
+if (btnVibration) {
+  btnVibration.addEventListener("click", () => {
+    window.navigator.vibrate(200);
+  });
+}
