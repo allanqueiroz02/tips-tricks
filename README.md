@@ -4,3 +4,4 @@
 #### 2. Adicionar uma 'seção escondida', ao clicar expande o item
 #### 3. Atributo draggable em um elemento
 #### 4. Usando método sort()
+#### 5. Utilizando a vibração do telefone
