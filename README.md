@@ -5,3 +5,4 @@
 #### 3. Atributo draggable em um elemento
 #### 4. Usando método sort()
 #### 5. Utilizando a vibração do telefone
+#### 6. WEB API SHARE
