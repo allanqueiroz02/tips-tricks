@@ -17,3 +17,17 @@ if (btnVibration) {
         window.navigator.vibrate(200);
     });
 }
+const btnShare = document.querySelector("#btn-share");
+const can = navigator.canShare();
+if (btnShare && navigator.share) {
+    btnShare.addEventListener("click", () => {
+        navigator
+            .share({
+            title: "WEB API SHARE TESTE",
+            text: "Um teste de utilização da API WEB SHARE",
+            url: "https://www.google.com",
+        })
+            .then(() => console.log("Compartilhou com sucesso"))
+            .catch((err) => console.log("Vixe, deu algum B.O.", err));
+    });
+}
