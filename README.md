@@ -6,3 +6,4 @@
 #### 4. Usando método sort()
 #### 5. Utilizando a vibração do telefone
 #### 6. WEB API SHARE
+#### 6. Custom Cursor
