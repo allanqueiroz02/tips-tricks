@@ -22,7 +22,6 @@ if (btnVibration) {
 
 const btnShare = document.querySelector("#btn-share");
 const can = window.navigator.canShare();
-console.log('>CAN', can);
 if (btnShare && navigator.share) {
   btnShare.addEventListener("click", () => {
     navigator

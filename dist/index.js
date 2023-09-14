@@ -18,7 +18,7 @@ if (btnVibration) {
     });
 }
 const btnShare = document.querySelector("#btn-share");
-const can = navigator.canShare();
+const can = window.navigator.canShare();
 if (btnShare && navigator.share) {
     btnShare.addEventListener("click", () => {
         navigator
