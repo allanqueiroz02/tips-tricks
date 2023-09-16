@@ -20,17 +20,29 @@ if (btnVibration) {
   });
 }
 
-const btnShare = document.querySelector("#btn-share");
-const can = window.navigator.canShare();
-if (btnShare && navigator.share) {
-  btnShare.addEventListener("click", () => {
-    navigator
-      .share({
-        title: "WEB API SHARE TESTE",
-        text: "Um teste de utilização da API WEB SHARE",
-        url: "https://www.google.com",
-      })
-      .then(() => console.log("Compartilhou com sucesso"))
-      .catch((err) => console.log("Vixe, deu algum B.O.", err));
+// const btnShare = document.querySelector("#btn-share");
+// const can = window.navigator.canShare();
+// if (btnShare && navigator.share) {
+//   btnShare.addEventListener("click", () => {
+//     navigator
+//       .share({
+//         title: "WEB API SHARE TESTE",
+//         text: "Um teste de utilização da API WEB SHARE",
+//         url: "https://www.google.com",
+//       })
+//       .then(() => console.log("Compartilhou com sucesso"))
+//       .catch((err) => console.log("Vixe, deu algum B.O.", err));
+//   });
+// }
+
+const listOfFruits = ["Banana", "Laranja", "Uva", "Limão"];
+const btnRandomFruit = document.querySelector("#btn-random-fruit");
+const showRandomFruit = document.querySelector("#show-random-fruit");
+
+if (btnRandomFruit) {
+  btnRandomFruit.addEventListener("click", () => {
+    const getRandomItem =
+      listOfFruits[Math.floor(Math.random() * listOfFruits.length)];
+    if (showRandomFruit) showRandomFruit.innerHTML = getRandomItem;
   });
 }
