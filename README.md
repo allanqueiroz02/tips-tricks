@@ -6,5 +6,6 @@
 #### 4. Usando método sort()
 #### 5. Utilizando a vibração do telefone
 #### 6. WEB API SHARE
-#### 6. Custom Cursor
-#### 6. Pegar um item aleatório de um array
+#### 7. Pegar um item aleatório de um array
+#### 8. Pegar um item aleatório de um array
+#### Custom Cursor
