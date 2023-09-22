@@ -1,0 +1,21 @@
+body {
+    /* cursor: url("../assets/gastly.png"), auto; */
+    font-family: "Montserrat", sans-serif;
+    background-color: #4f6d7a;
+  }
+  .cool-header {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: none;
+    border-left: 2px solid #ff0000a1;
+  }
+
+  button {
+    border-radius: 3px;
+    padding: 14px;
+    letter-spacing: 1px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  button:hover {
+    cursor: pointer;
+  }
