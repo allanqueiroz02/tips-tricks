@@ -10,4 +10,5 @@
 #### 8. Pegar um item aleatório de um array
 #### 9. Efeitos daora nos btn, KTCHAU
 #### 10. Glass effect
+#### 11. Text portrait
 #### Custom Cursor
