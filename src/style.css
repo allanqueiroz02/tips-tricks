@@ -1,21 +1,43 @@
 body {
-    /* cursor: url("../assets/gastly.png"), auto; */
-    font-family: "Montserrat", sans-serif;
-    background-color: #4f6d7a;
-  }
-  .cool-header {
-    padding: 10px;
-    background-color: #f8f8f8;
-    border: none;
-    border-left: 2px solid #ff0000a1;
-  }
+  /* cursor: url("../assets/gastly.png"), auto; */
+  font-family: "Montserrat", sans-serif;
+  background-color: #4f6d7a;
+}
+.cool-header {
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: none;
+  border-left: 2px solid #ff0000a1;
+}
 
-  button {
-    border-radius: 3px;
-    padding: 14px;
-    letter-spacing: 1px;
-    font-family: "Courier New", Courier, monospace;
-  }
-  button:hover {
-    cursor: pointer;
-  }
+button {
+  border-radius: 3px;
+  padding: 14px;
+  letter-spacing: 1px;
+  font-family: "Courier New", Courier, monospace;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  min-height: 100vh;
+  background-image: url("../assets/wallpaper1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.glass-effect {
+  font-size: 48px;
+  width: 700px;
+  height: 500px;
+  background-color: #ffffff10;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  border-radius: 25px;
+}
