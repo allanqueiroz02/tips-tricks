@@ -2,6 +2,7 @@ window.onload = function () {
   console.log("Todos os recursos terminaram o carregamento!");
 };
 
+//#4
 const arrayNumeros = [5, 51, 2, 26, 6, 1, 20];
 const arrFormatado = arrayNumeros.sort();
 const arrFormatadoCorretamente = arrayNumeros.sort((a, b) => a - b);
@@ -13,6 +14,7 @@ Original: [${arrayNumeros}]
 Formatado-errado: [${arrFormatado}]
 Formatado-certo: [${arrFormatadoCorretamente}]`;
 
+//#5
 const btnVibration = document.querySelector("#btn-vibration");
 if (btnVibration) {
   btnVibration.addEventListener("click", () => {
@@ -20,6 +22,7 @@ if (btnVibration) {
   });
 }
 
+//#6
 // const btnShare = document.querySelector("#btn-share");
 // const can = window.navigator.canShare();
 // if (btnShare && navigator.share) {
@@ -35,6 +38,7 @@ if (btnVibration) {
 //   });
 // }
 
+//#7
 const listOfFruits = ["Banana", "Laranja", "Uva", "Limão"];
 const btnRandomFruit = document.querySelector("#btn-random-fruit");
 const showRandomFruit = document.querySelector("#show-random-fruit");
