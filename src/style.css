@@ -41,3 +41,14 @@ button:hover {
   color: #ffffff;
   border-radius: 25px;
 }
+
+.text-portrait {
+  max-width: 25%;
+  text-align: justify;
+  background-image: url("../assets/doggo2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(225, 225, 225, 0);
+}
