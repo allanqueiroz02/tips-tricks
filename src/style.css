@@ -52,3 +52,7 @@ button:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(225, 225, 225, 0);
 }
+
+.accent   {
+  accent-color: #0ba263;
+}
