@@ -58,3 +58,7 @@ button:hover {
   width: 20px;
   height: 20px;
 }
+input[type="text"] {
+  caret-color: #ff0000a1;
+  font-size: 30px;
+}
