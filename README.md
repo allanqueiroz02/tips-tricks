@@ -11,5 +11,5 @@
 #### 9. Efeitos daora nos btn, KTCHAU
 #### 10. Glass effect
 #### 11. Text portrait
-#### 11. Accemt color
+#### 11. Accent color & Caret color
 #### Custom Cursor
