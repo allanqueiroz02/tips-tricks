@@ -66,3 +66,11 @@ input[type="text"] {
 input[type="file"] {
   font-size: 17px;
 }
+
+.resize {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: both;
+  overflow: auto;
+}
