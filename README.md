@@ -13,4 +13,5 @@
 #### 11. Text portrait
 #### 12. Accent color & Caret color
 #### 13. upload de imgs
+#### 14. Resize
 #### Custom Cursor
