@@ -12,4 +12,5 @@
 #### 10. Glass effect
 #### 11. Text portrait
 #### 12. Accent color & Caret color
+#### 13. upload de imgs
 #### Custom Cursor
