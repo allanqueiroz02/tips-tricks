@@ -62,3 +62,7 @@ input[type="text"] {
   caret-color: #ff0000a1;
   font-size: 30px;
 }
+
+input[type="file"] {
+  font-size: 17px;
+}
