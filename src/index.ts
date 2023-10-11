@@ -52,6 +52,6 @@ if (btnRandomFruit) {
 }
 
 function loadFile(event: any) {
-  const image = document.getElementById("output") as HTMLInputElement;
+  const image = document.getElementById("output") as HTMLImageElement;
   if (event.target) image.src = URL.createObjectURL(event.target.files[0]);
 }
