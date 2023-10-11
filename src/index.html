@@ -155,14 +155,18 @@
 
     <h3 class="cool-header">#13</h3>
     <div>
-      <label for="udivload-img" style="display: block">carregar img</label>
+      <label for="upload-img" style="display: block">carregar img</label>
       <input
         type="file"
         name="uploadImg"
         id="upload-img"
         capture="user"
         accept="image/*"
+        onchange="loadFile(event)"
       />
+      <div>
+        <img id="output" width="300" />
+      </div>
     </div>
 
     <h3 class="cool-header">#14</h3>

@@ -45,3 +45,8 @@ if (btnRandomFruit) {
             showRandomFruit.innerHTML = getRandomItem;
     });
 }
+function loadFile(event) {
+    const image = document.getElementById("output");
+    if (event.target)
+        image.src = URL.createObjectURL(event.target.files[0]);
+}

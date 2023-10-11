@@ -50,3 +50,8 @@ if (btnRandomFruit) {
     if (showRandomFruit) showRandomFruit.innerHTML = getRandomItem;
   });
 }
+
+function loadFile(event: any) {
+  const image = document.getElementById("output") as HTMLInputElement;
+  if (event.target) image.src = URL.createObjectURL(event.target.files[0]);
+}
