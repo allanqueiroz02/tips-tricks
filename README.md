@@ -13,5 +13,5 @@
 #### 11. Text portrait
 #### 12. Accent color & Caret color
 #### 13. upload de imgs com preview e com fileReader
-#### 14. Resize
+#### 14. Resize Div
 #### Custom Cursor
