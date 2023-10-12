@@ -1,5 +1,5 @@
 window.onload = function () {
-  console.log("Todos os recursos terminaram o carregamento!");
+  console.log("Todos os recursos foram carregados!");
 };
 
 //#4
@@ -51,7 +51,27 @@ if (btnRandomFruit) {
   });
 }
 
+// #13
 function loadFile(event: any) {
   const image = document.getElementById("output") as HTMLImageElement;
   if (event.target) image.src = URL.createObjectURL(event.target.files[0]);
+}
+
+// #13 com filereader
+function previewImage() {
+  const fileReader = new FileReader();
+  const inputImg = document.getElementById(
+    "input-file-fileReader"
+  ) as HTMLInputElement;
+  const imageFileReader = document.getElementById(
+    "img-fileReader"
+  ) as HTMLImageElement;
+
+  if (inputImg.files) {
+    fileReader.readAsDataURL(inputImg.files[0]);
+    fileReader.onload = function (fileReaderEvent) {
+      if (typeof fileReaderEvent.target?.result === "string")
+        imageFileReader.src = fileReaderEvent.target?.result;
+    };
+  }
 }

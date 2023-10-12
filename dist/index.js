@@ -1,6 +1,6 @@
 "use strict";
 window.onload = function () {
-    console.log("Todos os recursos terminaram o carregamento!");
+    console.log("Todos os recursos foram carregados!");
 };
 //#4
 const arrayNumeros = [5, 51, 2, 26, 6, 1, 20];
@@ -45,8 +45,22 @@ if (btnRandomFruit) {
             showRandomFruit.innerHTML = getRandomItem;
     });
 }
+// #13
 function loadFile(event) {
     const image = document.getElementById("output");
     if (event.target)
         image.src = URL.createObjectURL(event.target.files[0]);
+}
+// #13 com filereader
+function previewImage() {
+    const fileReader = new FileReader();
+    const inputImg = document.getElementById("input-file-fileReader");
+    const imageFileReader = document.getElementById("img-fileReader");
+    if (inputImg.files) {
+        fileReader.readAsDataURL(inputImg.files[0]);
+        fileReader.onload = function (fileReaderEvent) {
+            if (typeof fileReaderEvent.target?.result === "string")
+                imageFileReader.src = fileReaderEvent.target?.result;
+        };
+    }
 }
