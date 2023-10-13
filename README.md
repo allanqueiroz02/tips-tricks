@@ -14,4 +14,5 @@
 #### 12. Accent color & Caret color
 #### 13. upload de imgs com preview e com fileReader
 #### 14. Resize Div
+#### 15. Cool btn hover
 #### Custom Cursor
