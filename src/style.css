@@ -69,7 +69,7 @@ input[type="file"] {
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 15px;
-  color: #82FFB1;
+  color: #82ffb1;
 }
 
 input[type="file"]:hover {
@@ -78,8 +78,12 @@ input[type="file"]:hover {
 
 .resize {
   border: 2px solid;
-  padding: 20px; 
+  padding: 20px;
   width: 300px;
   resize: both;
   overflow: auto;
+}
+
+[data-btn="cool-effect"] {
+  color: #ff0000;
 }
