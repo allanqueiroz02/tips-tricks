@@ -53,6 +53,7 @@ button:hover {
   -webkit-text-fill-color: rgba(225, 225, 225, 0);
 }
 
+/* 12 */
 .accent {
   accent-color: #0ba263;
   width: 20px;
@@ -121,4 +122,39 @@ input[type="file"]:hover {
 }
 .btn2:hover::before {
   transform: scaleY(1);
+}
+
+/* 16 */
+.container-custom-checkbox {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-custom-checkbox {
+  background-color: #d2d2d2;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+}
+.button-custom-checkbox::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin: 5px;
+  transition: 0.3s;
+}
+[data-input="input-custom-checkbox"]:checked + .button-custom-checkbox {
+  background-color: #20096d;
+}
+[data-input="input-custom-checkbox"]:checked + .button-custom-checkbox::before {
+  transform: translateX(50px);
+}
+[data-input="input-custom-checkbox"] {
+  display: none;
 }
