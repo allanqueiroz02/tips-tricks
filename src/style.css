@@ -2,23 +2,26 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  /* cursor: url("../assets/gastly.png"), auto; */
   font-family: "Montserrat", sans-serif;
   background-color: #4f6d7a;
+  /* cursor: url("../assets/gastly.png"), auto; */
 }
 .cool-header {
   padding: 10px;
   background-color: #f8f8f8;
   border: none;
-  border-left: 2px solid #ff0000a1;
+  border-left: 3px solid #ff0000a1;
 }
+
+/* listagem de links */
 ul {
   list-style-type: none;
 }
 ul li {
-  padding: 5px;
+  padding: 15px;
 }
 ul li a {
+  display: block;
   font-size: 1.3rem;
   text-decoration: none;
 }
@@ -28,8 +31,8 @@ ul li a:visited {
 }
 
 button {
-  border-radius: 3px;
   padding: 14px;
+  border-radius: 3px;
   letter-spacing: 1px;
   font-family: "Courier New", Courier, monospace;
 }
@@ -37,30 +40,33 @@ button:hover {
   cursor: pointer;
 }
 
+/* 10. Glass effect */
 .centered {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .img {
-  min-height: 100vh;
+  width: 700px; 
+  height: 500px;
   background-image: url("../assets/wallpaper1.jpg");
   background-size: cover;
   background-position: center;
 }
 .glass-effect {
+  width: 350px;
+  height: 250px;
   font-size: 48px;
-  width: 700px;
-  height: 500px;
+  color: #ffffff;
   background-color: #ffffff10;
+  border-radius: 25px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  color: #ffffff;
-  border-radius: 25px;
 }
 
+/* 11. Text portrait */
 .text-portrait {
-  max-width: 25%;
+  /* max-width: 25%; */
   text-align: justify;
   background-image: url("../assets/doggo2.jpg");
   background-repeat: no-repeat;
@@ -70,23 +76,24 @@ button:hover {
   -webkit-text-fill-color: rgba(225, 225, 225, 0);
 }
 
-/* 12 */
+/* 12. Accent color & Caret color */
 .accent {
-  accent-color: #0ba263;
   width: 20px;
   height: 20px;
+  accent-color: #0ba263;
 }
 input[type="text"] {
-  caret-color: #ff0000a1;
   font-size: 30px;
+  caret-color: #ff0000a1;
 }
 
+/* 13. upload de imgs com preview e com fileReader */
 input[type="file"] {
   font-size: 17px;
-  border: 1px solid #ffffffa1;
-  border-radius: 10px;
   padding: 10px;
   margin-bottom: 15px;
+  border: 1px solid #ffffffa1;
+  border-radius: 10px;
   color: #82ffb1;
 }
 
@@ -94,22 +101,24 @@ input[type="file"]:hover {
   cursor: pointer;
 }
 
+/* 14. Resize Div */
 .resize {
-  border: 2px solid;
-  padding: 20px;
   width: 300px;
+  padding: 20px;
+  border: 2px solid;
   resize: both;
   overflow: auto;
 }
 
+/* 15. Cool btn hover */
 .btn-hover-me {
+  min-width: 200px;
+  padding: 12px 20px;
+  margin: 10px;
   position: relative;
   background: none;
   border: 2px solid #000;
   text-transform: uppercase;
-  padding: 12px 20px;
-  min-width: 200px;
-  margin: 10px;
   transition: color 0.5s linear;
 }
 .btn-hover-me:hover {
@@ -117,11 +126,11 @@ input[type="file"]:hover {
 }
 .btn-hover-me::before {
   content: "";
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
   background: #000;
   z-index: -1;
   transition: transform 0.5s;
@@ -141,7 +150,7 @@ input[type="file"]:hover {
   transform: scaleY(1);
 }
 
-/* 16 */
+/* 16. Custom checkbox */
 .container-custom-checkbox {
   height: 150px;
   display: flex;
@@ -149,19 +158,19 @@ input[type="file"]:hover {
   justify-content: center;
 }
 .button-custom-checkbox {
-  background-color: #d2d2d2;
   width: 100px;
   height: 50px;
+  position: relative;
+  background-color: #d2d2d2;
   border-radius: 50px;
   cursor: pointer;
-  position: relative;
 }
 .button-custom-checkbox::before {
   content: "";
-  position: absolute;
-  background-color: #fff;
   width: 40px;
   height: 40px;
+  position: absolute;
+  background-color: #fff;
   border-radius: 50px;
   margin: 5px;
   transition: 0.3s;
