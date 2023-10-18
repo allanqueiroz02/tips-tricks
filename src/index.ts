@@ -39,7 +39,7 @@ if (btnVibration) {
 // }
 
 //#7
-const listOfFruits = ["Banana", "Laranja", "Uva", "Limão"];
+const listOfFruits = ["Banana", "Laranja", "Uva", "Limão", "Acerola", "Caju", "Abacaxi"];
 const btnRandomFruit = document.querySelector("#btn-random-fruit");
 const showRandomFruit = document.querySelector("#show-random-fruit");
 

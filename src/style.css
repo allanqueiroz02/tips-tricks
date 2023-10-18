@@ -47,7 +47,7 @@ button:hover {
   align-items: center;
 }
 .img {
-  width: 700px; 
+  width: 700px;
   height: 500px;
   background-image: url("../assets/wallpaper1.jpg");
   background-size: cover;
@@ -164,6 +164,7 @@ input[type="file"]:hover {
   background-color: #d2d2d2;
   border-radius: 50px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 .button-custom-checkbox::before {
   content: "";
