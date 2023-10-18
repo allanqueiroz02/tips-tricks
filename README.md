@@ -32,4 +32,10 @@
 
 #### 16. Custom checkbox
 
+#### 17. Modal
+
+#### 18. Btn back to top
+
+#### 19. Tooltip (atualmente apenas para web)
+
 #### Custom Cursor
