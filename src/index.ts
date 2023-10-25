@@ -39,7 +39,15 @@ if (btnVibration) {
 // }
 
 //#7
-const listOfFruits = ["Banana", "Laranja", "Uva", "Limão", "Acerola", "Caju", "Abacaxi"];
+const listOfFruits = [
+  "Banana",
+  "Laranja",
+  "Uva",
+  "Limão",
+  "Acerola",
+  "Caju",
+  "Abacaxi",
+];
 const btnRandomFruit = document.querySelector("#btn-random-fruit");
 const showRandomFruit = document.querySelector("#show-random-fruit");
 
@@ -86,3 +94,32 @@ function previewImage() {
 //       });
 //   });
 // });
+
+// 17
+const openModalBtn = document.querySelector("[data-modal='abrir']");
+const closeModalBtn = document.querySelector("[data-modal='fechar']");
+const containerModal = document.querySelector(".container-modal");
+const loginBtn = document.querySelector("#button-logar");
+
+const userEvents = ["click", "touchstart"];
+
+if (openModalBtn && closeModalBtn && containerModal) {
+  userEvents.forEach((eventUser) => {
+    openModalBtn.addEventListener(eventUser, () => {
+      containerModal.classList.add("ativo");
+    });
+
+    closeModalBtn.addEventListener(eventUser, () => {
+      containerModal.classList.remove("ativo");
+    });
+
+    containerModal.addEventListener(eventUser, function (event) {
+      if (event.target === this) containerModal.classList.remove("ativo");
+    });
+
+    loginBtn?.addEventListener(eventUser, (event) => {
+      event.preventDefault();
+      console.log("Clicou em logar");
+    });
+  });
+}
