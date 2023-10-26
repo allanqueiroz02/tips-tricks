@@ -104,4 +104,18 @@ if (openModalBtn && closeModalBtn && containerModal) {
             console.log("Clicou em logar");
         });
     });
+    //18
+    let toTopButton = document.querySelector("[data-button='to-top']");
+    window.onscroll = function () {
+        scrollToTop();
+    };
+    function scrollToTop() {
+        if (document.documentElement.scrollTop > 1000)
+            toTopButton.style.display = "block";
+        else
+            toTopButton.style.display = "none";
+    }
+    toTopButton.addEventListener("click", () => {
+        document.body.scrollIntoView({ behavior: "smooth" });
+    });
 }
