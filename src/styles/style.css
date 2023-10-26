@@ -83,7 +83,7 @@ button:hover {
   accent-color: #0ba263;
 }
 input[type="text"] {
-  font-size: 30px;
+  font-size: 20px;
   caret-color: #ff0000a1;
 }
 
@@ -205,4 +205,30 @@ input[type="file"]:hover {
 }
 [data-button="to-top"]:hover {
   opacity: 1;
+}
+
+/* 19 */
+.container-input {
+  border: 5px solid #fff;
+  max-width: 320px;
+}
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  border-width: 0 0 3px 0;
+  border-style: solid;
+  background-color: #fff;
+}
+
+.input-box input {
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  caret-color: #000;
+}
+
+.input-box img {
+  width: 25px;
+  margin: 5px;
 }
