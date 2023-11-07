@@ -40,4 +40,6 @@
 
 #### 20. Tooltip (atualmente apenas para web)
 
+#### 21. Card estilizado
+
 #### Custom Cursor
