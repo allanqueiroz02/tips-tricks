@@ -38,6 +38,6 @@
 
 #### 19. Input estilizado com icon
 
-#### 19. Tooltip (atualmente apenas para web)
+#### 20. Tooltip (atualmente apenas para web)
 
 #### Custom Cursor
