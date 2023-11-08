@@ -254,7 +254,7 @@ input[type="file"]:hover {
   left: 75px;
   top: -100px;
   background: linear-gradient(#00e5ff, #b400fb);
-  animation: animate 2.4s linear infinite;
+  animation: animate 2s linear infinite;
 }
 
 .container-card-estilizado::after {
