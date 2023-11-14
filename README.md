@@ -42,4 +42,8 @@
 
 #### 21. Card estilizado
 
+#### 22. Um relógio
+
+#### 23. Gerar um array de números aleatórios baseados em uma qtd de posições e ñ adicionar números repetidos, e informando um min e max
+
 #### Custom Cursor
