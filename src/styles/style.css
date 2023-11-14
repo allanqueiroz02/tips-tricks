@@ -280,3 +280,11 @@ input[type="file"]:hover {
     transform: rotate(360deg);
   }
 }
+
+/* 22 */
+#relogio {
+  display: none;
+}
+.showTimer {
+  display: block !important;
+}

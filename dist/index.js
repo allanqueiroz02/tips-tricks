@@ -119,3 +119,31 @@ if (openModalBtn && closeModalBtn && containerModal) {
         document.body.scrollIntoView({ behavior: "smooth" });
     });
 }
+// 22
+function getTimer() {
+    const relogio = document.querySelector("#relogio");
+    const hours = new Date().getHours();
+    const frttedHours = hours.toString().length === 1 ? `0${hours}` : hours;
+    const minutes = new Date().getMinutes();
+    const frttedMinutes = minutes.toString().length === 1 ? `0${minutes}` : minutes;
+    const seconds = new Date().getSeconds();
+    const frttedSeconds = seconds.toString().length === 1 ? `0${seconds}` : seconds;
+    if (relogio) {
+        relogio.innerText = `${frttedHours}:${frttedMinutes}:${frttedSeconds}`;
+    }
+}
+const showTimer = document.querySelector("[data-relogio='show']");
+const hideTimer = document.querySelector("[data-relogio='hide']");
+const timer = document.querySelector("#relogio");
+let intervalTimer;
+if (showTimer)
+    showTimer.addEventListener("click", function () {
+        timer?.classList.add("showTimer");
+        intervalTimer = setInterval(getTimer, 1000);
+    });
+if (hideTimer)
+    hideTimer.addEventListener("click", function () {
+        timer?.classList.remove("showTimer");
+        if (intervalTimer)
+            clearInterval(intervalTimer);
+    });
