@@ -147,3 +147,19 @@ if (hideTimer)
         if (intervalTimer)
             clearInterval(intervalTimer);
     });
+//23
+const minInput = document.querySelector("#min-input");
+const maxInput = document.querySelector("#max-input");
+const itensFromArr = document.querySelector("#itens-from-array");
+const generateButton = document.querySelector("#generate-numbers-array");
+const showNumbers = document.querySelector("#show-numbers-array");
+function generateRandomNumber() {
+    const maxNumber = +maxInput.value;
+    const minNumber = +minInput.value;
+    if (maxNumber && minNumber)
+        return Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
+    return "Os números não foram informados";
+}
+generateButton?.addEventListener("click", function () {
+    console.log(generateRandomNumber());
+});

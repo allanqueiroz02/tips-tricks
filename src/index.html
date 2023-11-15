@@ -349,10 +349,17 @@
 
     <h3 class="cool-header" id="23">#23</h3>
     <div class="">
-      <input type="number" name="min-button" id="min-button">
-      <input type="number" name="max-button" id="max-button">
-      <button>Gerar</button>
-      <span></span>
+      <label for="min-input">n° min</label>
+      <input type="number" name="min-input" id="min-input" />
+
+      <label for="max-input">n° max</label>
+      <input type="number" name="max-input" id="max-input" />
+
+      <label for="itens-from-array">Qtd de itens do array</label>
+      <input type="number" name="itens-from-array" id="itens-from-array" />
+      
+      <button id="generate-numbers-array">Gerar</button>
+      <span id="show-numbers-array"></span>
     </div>
 
     <script src="../dist/index.js"></script>
