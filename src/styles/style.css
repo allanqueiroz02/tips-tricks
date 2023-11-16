@@ -297,3 +297,13 @@ input[type="file"]:hover {
 .showTimer {
   display: inline-block !important;
 }
+
+/* 23 */
+.container-grid-random-numbers{
+  padding: 10px;
+}
+.container-grid-random-numbers input {
+  display: block;
+  padding: 12px 30px;
+  font-size: 22px;
+}
