@@ -183,11 +183,14 @@ if (hideTimer)
 //23
 const minInput = document.querySelector("#min-input") as HTMLInputElement;
 const maxInput = document.querySelector("#max-input") as HTMLInputElement;
-const itensFromArr = document.querySelector(
+const qtdArray = document.querySelector(
   "#itens-from-array"
 ) as HTMLInputElement;
 const generateButton = document.querySelector("#generate-numbers-array");
 const showNumbers = document.querySelector("#show-numbers-array");
+
+const formattedQtdNumber = +qtdArray.value;
+let arrayNumbers: number[] = Array(formattedQtdNumber);
 
 function generateRandomNumber() {
   const maxNumber = +maxInput.value;
@@ -199,6 +202,22 @@ function generateRandomNumber() {
   return "Os números não foram informados";
 }
 
+function alreadyHasNumber(arr: number[], number: number) {
+  
+}
+
+function createArrayOfNumbers() {
+  const randomNumber = generateRandomNumber();
+
+  if (formattedQtdNumber && typeof randomNumber === "number") {
+    if (!arrayNumbers.length && typeof randomNumber === "number")
+      arrayNumbers.push(randomNumber);
+    else {
+      alreadyHasNumber(arrayNumbers, randomNumber);
+    }
+  }
+}
+
 generateButton?.addEventListener("click", function () {
-  console.log(generateRandomNumber());
+  createArrayOfNumbers();
 });
