@@ -192,6 +192,8 @@ const showNumbers = document.querySelector("#show-numbers-array");
 const formattedQtdNumber = +qtdArray.value;
 let arrayNumbers: number[] = Array(formattedQtdNumber);
 
+// numero max ñ pode ser menor que min
+
 function generateRandomNumber() {
   const maxNumber = +maxInput.value;
   const minNumber = +minInput.value;
@@ -203,7 +205,7 @@ function generateRandomNumber() {
 }
 
 function alreadyHasNumber(arr: number[], number: number) {
-  
+
 }
 
 function createArrayOfNumbers() {

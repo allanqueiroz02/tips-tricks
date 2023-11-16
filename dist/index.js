@@ -155,6 +155,7 @@ const generateButton = document.querySelector("#generate-numbers-array");
 const showNumbers = document.querySelector("#show-numbers-array");
 const formattedQtdNumber = +qtdArray.value;
 let arrayNumbers = Array(formattedQtdNumber);
+// numero max ñ pode ser menor que min
 function generateRandomNumber() {
     const maxNumber = +maxInput.value;
     const minNumber = +minInput.value;
