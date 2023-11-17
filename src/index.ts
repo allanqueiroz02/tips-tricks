@@ -189,37 +189,21 @@ const qtdArray = document.querySelector(
 const generateButton = document.querySelector("#generate-numbers-array");
 const showNumbers = document.querySelector("#show-numbers-array");
 
-const formattedQtdNumber = +qtdArray.value;
-let arrayNumbers: number[] = Array(formattedQtdNumber);
+generateButton?.addEventListener("click", function () {
+  const minNumber = +minInput.value;
+  const maxNumber = +maxInput.value;
+  const formattedQtdArray = +qtdArray.value;
+
+  const arrayNumbers: number[] = Array(0);
+  const randomNumber = () =>
+    Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
+
+  while (arrayNumbers.length !== formattedQtdArray) {
+    const newRandomNumber = randomNumber();
+    arrayNumbers.push(newRandomNumber);
+  }
+
+  if (showNumbers) showNumbers.innerHTML = arrayNumbers.toString();
+});
 
 // numero max ñ pode ser menor que min
-
-function generateRandomNumber() {
-  const maxNumber = +maxInput.value;
-  const minNumber = +minInput.value;
-
-  if (maxNumber && minNumber)
-    return Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
-
-  return "Os números não foram informados";
-}
-
-function alreadyHasNumber(arr: number[], number: number) {
-
-}
-
-function createArrayOfNumbers() {
-  const randomNumber = generateRandomNumber();
-
-  if (formattedQtdNumber && typeof randomNumber === "number") {
-    if (!arrayNumbers.length && typeof randomNumber === "number")
-      arrayNumbers.push(randomNumber);
-    else {
-      alreadyHasNumber(arrayNumbers, randomNumber);
-    }
-  }
-}
-
-generateButton?.addEventListener("click", function () {
-  createArrayOfNumbers();
-});
