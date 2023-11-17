@@ -301,9 +301,17 @@ input[type="file"]:hover {
 /* 23 */
 .container-grid-random-numbers{
   padding: 10px;
+  width: 50%;
 }
 .container-grid-random-numbers input {
   display: block;
   padding: 12px 30px;
   font-size: 22px;
+}
+.container-grid-random-numbers button {
+  width: 100%;
+}
+.container-grid-random-numbers span {
+  margin: 15px;
+  font-size: 2rem;
 }
